@@ -1,2 +1,20 @@
-# fnOS_wallpaper
-自动更换飞牛fnOS登录页面背景壁纸   Automatically change the background wallpaper of the fnOS login page.
+# fnOS_wallpaper_diy
+自动更换飞牛fnOS登录页面背景壁纸   
+Automatically change the background wallpaper of the fnOS login page.  
+
+截止202508飞牛fnOS仍不支持自定义登录页面背景
+旧版本fnOS可以直接修改“/usr/trim/www/static/bg/wallpaper-1.webp”自定义登录界面背景
+但2025年fnOS版本更新后系统会锁定www目录，任何操作如cp/mv/chmod等过几秒都会自动恢复默认导致自定义失败
+
+# 功能
+常见PNG/JPG/BMP/GIF/WEBP等格式都可以支持
+自动管理目录权限，需要root权限执行成功后刷新登录页面缓存即可立竿见影看到效果
+
+# Usage
+chmod 777 ./wallpaperChange.sh
+./wallpaperChange.sh /vol1/1000/bg/girl.png  # 用指定图片更换登录页背景  
+./wallpaperChange.sh -r  # 恢复系统默认
+
+# 注意
+* 设置后会用指定图片替换掉系统首张壁纸
+* 如果系统升级等有任何疑问，可以用“-r”参数恢复默认 
