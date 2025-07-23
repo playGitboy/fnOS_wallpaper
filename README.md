@@ -10,10 +10,12 @@ Automatically change the background wallpaper of the fnOS login page.
 常见PNG/JPG/BMP/GIF/WEBP等格式都可以支持
 自动管理目录权限，需要root权限执行成功后刷新登录页面缓存即可立竿见影看到效果
 
-# Usage
-chmod 777 ./wallpaperChange.sh
+# 用法
+```
+chmod 777 ./wallpaperChange.sh  
 ./wallpaperChange.sh /vol1/1000/bg/girl.png  # 用指定图片更换登录页背景  
 ./wallpaperChange.sh -r  # 恢复系统默认
+```
 
 # 注意
 * 设置后会用指定图片替换掉系统首张壁纸
